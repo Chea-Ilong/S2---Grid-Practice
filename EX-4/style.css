@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  background-color: #53A6D4;
+  padding: 20px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 1em;
+}
+
+.item {
+  background-color: #FFFFFF;
+  color: #333;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.photo1 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.photo2 {
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.item img {
+  padding-top: 2%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 1em;
+  padding: 10px;
+  background-color: rgb(165, 164, 164);
+  border-radius: 8px;
+
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+  border: 1px solid black;
+}
+
+li {
+  font-size: large;
+  margin-bottom: 10px;
+  font: bold;
+  font-weight: bolder;
+  color: rgb(2, 2, 22);
+
+  background-color: #6bb2d8;
+  border-radius: 10px;
+  padding: 5%;
+  list-style-type: none;
+  width: 65px;
+
+}
+
+.welcome {
+
+  padding: 10%;
+  text-align: center;
+
+}
+
+li:hover {
+  cursor: pointer;
+  color: rgb(15, 15, 236);
+}
+
+.card p {
+  font-size: large;
+  font: bold;
+  font-weight: bolder;
+  color: rgb(40, 40, 202);
+
+  padding: 5%;
+}
+
+.card img {
+
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.cta-button:hover {
+  background-color: #2a692d;
+
+  transition: 0.4s;
+
+
+}
+
+@media (max-width: 1200px) {
+  .card {
+
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+  }
+
+}
+@media (max-width: 950px) {
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr; 
+  }}
