@@ -1,11 +1,12 @@
 body {
   margin: 0;
+  padding: 0;
 }
 
 .wrapper {
   background-color: #53A6D4;
   padding: 20px;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   gap: 1em;
@@ -130,8 +131,8 @@ li:hover {
 
 }
 @media (max-width: 950px) {
-  
   .wrapper {
-    display: grid;
-    grid-template-columns: 1fr; 
-  }}
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
